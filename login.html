@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Login</title>
+</head>
+<body>
+    <script>
+        function sistemLogin (username, password) {
+            const correctUsername = "user";
+            const correctPassword = "pass";
+
+            if (username === correctUsername && password === correctPassword ) {
+                console.log("Silakan Login");
+                return true;
+            } 
+            else {
+                console.log("Tidak Bisa Login")
+                return false;
+            }
+        }
+        sistemLogin("user", "pass"); // Output: Silakan Login
+        sistemLogin("user", "salahpass"); // Output: Tidak Bisa Login
+        sistemLogin("bukanuser", "pass"); // Output: Tidak Bisa Login
+        sistemLogin("bukanuser", "salahpass"); // Output: Tidak Bisa Login
+    
+    </script>
+    
+</body>
+</html>
